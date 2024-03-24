@@ -1,12 +1,24 @@
-import Image from "next/image";
+"use client"
 import {roboto_mono} from "@/app/fonts";
+import {motion} from 'framer-motion';
 
 export default function FirstPage() {
+
     return (
         <div className={"bg-[#F7F7F7] flex flex-row h-screen"}>
             <div className={"w-[45%] pt-[120px]"}>
-                <div className={"mx-[100px]"}>
-                    <Image src={"chirpy-design.svg"} width={500} height={300} alt={"chirpy design logo"}/>
+                <div className={"mx-[100px] mt-16"}>
+                    <motion.img
+                        src={"/chirpy-design.svg"}
+                        className={"w-[400px] h-[250px]"}
+                        alt={"design"}
+                        initial={{x: -100, opacity: 0}}
+                        animate={{x: 0, opacity: 1}}
+                        whileInView="visible"
+                        viewport={{once: true}}
+                        transition={{duration: 1}}>
+                    </motion.img>
+                    {/* this should appear after sometime */}
                     <p className={`${roboto_mono.className} w-[300px] mt-4`}>A design studio for mighty small businesses
                         who are ready to
                         brand up.</p>
