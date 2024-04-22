@@ -1,0 +1,15 @@
+.gallery {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.photo img {
+    height: auto;
+}
+
+/*#c2534a*/
