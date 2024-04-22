@@ -1,13 +1,14 @@
 import Navbar from "@/components/navbar";
 import FirstPage from "@/components/FirstPage";
-import SecondPage from "@/components/SecondPage";
+import StepPage, {Props} from "@/components/StepPage";
 
 export default function Home() {
+
     return (
         <main>
             <Navbar/>
             <FirstPage/>
-            <SecondPage/>
+            <StepPage/>
         </main>
     );
 }

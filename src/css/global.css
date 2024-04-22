@@ -1,0 +1,15 @@
+.slide-in {
+    animation-duration: 2s;
+    animation-name: slidein;
+    animation-timing-function: linear;
+}
+
+@keyframes slidein {
+    from {
+        width: 0; /* Start completely off-screen (left) */
+    }
+
+    to {
+        width: 100%; /* End in original position */
+    }
+}
